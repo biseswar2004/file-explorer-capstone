@@ -239,7 +239,7 @@ Commands: pwd, ls, cd, mkdir, touch, cp, mv, rm, info, find, tree, history, clea
 
 **Biseswar Mohapatra**
 🎓 Linux System Programming | C++ Developer | Automation Enthusiast
-📧 [biseswarmohapatra@gmail.com](mailto:biseswarmohapatra214@gmail.com)
+📧 [biseswarmohapatra214@gmail.com](mailto:biseswarmohapatra214@gmail.com)
 🌐 [GitHub Profile](https://github.com/biseswar2004)
 
 ---
@@ -254,3 +254,4 @@ This project successfully demonstrates:
 * Professional GitHub documentation and structure
 
 🎉 **Project Completed: 100% Functional (Day 1 → Day 5)**
+
