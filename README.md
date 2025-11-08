@@ -1,4 +1,4 @@
-# 🗂️ File Explorer – Linux Capstone Project (C++)
+#  File Explorer – Linux Capstone Project (C++)
 
 ###  Overview
 The **File Explorer Capstone Project** is a Linux-based, terminal-driven file management system developed using **C++17**.  
@@ -189,6 +189,7 @@ This project demonstrates a practical understanding of:
 - Command-line interface development  
 - Modern C++17 features and STL  
 - Structured software design and documentation  
+
 
 
 
