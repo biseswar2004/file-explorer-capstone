@@ -190,4 +190,4 @@ This project demonstrates a practical understanding of:
 - Modern C++17 features and STL  
 - Structured software design and documentation  
 
-💡 *Capstone Project successfully implemented from Day 1 to Day 5 — fully functional and ready for demonstration!*
+
