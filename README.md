@@ -1,127 +1,108 @@
 # 🗂️ File Explorer – Linux Capstone Project (C++)
 
-### 🔧 A Linux-based File Explorer built using **C++17** and **Filesystem Library**
+### 💡 Overview
+The **File Explorer Capstone Project** is a Linux-based, terminal-driven file management system developed using **C++17**.  
+It replicates the functionality of a Linux shell — allowing users to **navigate**, **create**, **move**, **copy**, and **analyze files and directories** through command-line commands.
 
-This project replicates the basic functionalities of a Linux shell — allowing users to **navigate**, **create**, **manage**, and **analyze files** directly from a terminal interface.
-
----
-
-## 📘 Project Overview
-
-This File Explorer is developed as part of the **Linux System Programming Capstone Project**.
-The goal is to implement Linux-like commands step-by-step across 5 days — integrating **system calls, directory traversal, file operations, and command utilities**.
-
-The project was implemented, tested, and run inside **WSL2 Ubuntu** using **VS Code**.
+Built and tested on **Ubuntu (via WSL2)** using **VS Code**, this project demonstrates expertise in **Linux System Programming**, **C++ STL**, and **filesystem operations**.
 
 ---
 
-## 🧠 Key Technologies Used
-
-| Technology        | Purpose                            |
-| ----------------- | ---------------------------------- |
-| **C++17 STL**     | Core logic and filesystem handling |
-| **<filesystem>**  | File and directory management      |
-| **WSL2 (Ubuntu)** | Linux environment for execution    |
-| **Makefile**      | Build automation                   |
-| **Git & GitHub**  | Version control and documentation  |
+## 🧠 Objective
+To design and implement a **simple command-line File Explorer** that performs fundamental file and directory operations in Linux — while reinforcing system-level programming concepts in C++.
 
 ---
 
-## 🗓️ Day-wise Development Progress
+## ⚙️ Technologies Used
 
-### 🟩 **Day 1 – Basic Setup & File Listing**
+| Tool / Technology | Purpose |
+|-------------------|----------|
+| **C++17 STL** | Core programming language |
+| **Filesystem Library** | File and directory handling |
+| **WSL2 (Ubuntu)** | Linux runtime environment |
+| **VS Code** | Code editor & build environment |
+| **Makefile** | Build automation |
+| **Git & GitHub** | Version control and documentation |
 
-**Objective:** Initialize the project and add basic shell commands.
-**Commands Implemented:**
+---
 
-* `pwd` → Print current working directory
-* `ls` → List files and directories
-* `exit` → Exit the explorer
+## 🗓️ Day-wise Progress
 
-**Highlights:**
+### 🟩 **Day 1 – Basic Setup & Commands**
+**Implemented Commands:**  
+- `pwd` → Print working directory  
+- `ls` → List files/folders  
+- `exit` → Exit the program  
 
-* Basic terminal UI created
-* Setup `Makefile` for build automation
-* Verified environment with WSL2 and Git integration
-
-📂 *Commit:* `Day1: Basic setup with ls and pwd commands`
+**Highlights:**  
+- Project setup and environment configuration  
+- Tested basic shell commands in C++  
+- Implemented Makefile for compilation  
 
 ---
 
 ### 🟨 **Day 2 – Directory Navigation & File Creation**
+**Implemented Commands:**  
+- `cd <dir>` → Change directory  
+- `mkdir <dir>` → Create directory  
+- `touch <file>` → Create a new file  
 
-**Objective:** Enable navigation and basic file/directory creation.
-**Commands Added:**
-
-* `cd <dir>` → Change directory
-* `mkdir <dir>` → Create directory
-* `touch <file>` → Create new file
-
-**Highlights:**
-
-* Introduced `std::filesystem::current_path()`
-* Implemented exception handling for invalid paths
-* Practiced user interaction and path validation
-
-📂 *Commit:* `Day2: Added cd, mkdir, and touch commands for navigation`
+**Highlights:**  
+- Introduced `std::filesystem::current_path()`  
+- Added exception handling for invalid directories  
+- Practiced argument parsing and validation  
 
 ---
 
-### 🟦 **Day 3 – File Manipulation & Info Retrieval**
+### 🟦 **Day 3 – File Manipulation & Information Retrieval**
+**Implemented Commands:**  
+- `cp <src> <dest>` → Copy file  
+- `mv <src> <dest>` → Move or rename file  
+- `rm <file>` → Remove file  
+- `info <file>` → Display file information  
 
-**Objective:** Manage and analyze files.
-**Commands Added:**
-
-* `cp <src> <dest>` → Copy file
-* `mv <src> <dest>` → Move or rename file
-* `rm <file>` → Delete file/folder
-* `info <file>` → Display file type, size, and modified time
-
-**Highlights:**
-
-* Integrated `std::filesystem::copy`, `rename`, `remove`
-* Introduced `chrono` for timestamp formatting
-* Handled permission and missing file errors gracefully
-
-📂 *Commit:* `Day3: Added cp, mv, rm, and info commands`
+**Highlights:**  
+- Used `std::filesystem::copy`, `rename`, `remove`  
+- Implemented `chrono` for last modified time  
+- Improved error handling and input validation  
 
 ---
 
-### 🟪 **Day 4 – Search, Tree View & Help System**
+### 🟪 **Day 4 – Search, Tree & Help**
+**Implemented Commands:**  
+- `find <name>` → Search recursively for file/folder  
+- `tree` → Display directory structure  
+- `help` → Show command guide  
 
-**Objective:** Add exploration and documentation features.
-**Commands Added:**
-
-* `find <name>` → Search for files/directories recursively
-* `tree` → Display directory structure recursively
-* `help` → List all available commands
-
-**Highlights:**
-
-* Used recursive iterators for deep traversal
-* Created a beautiful `tree` visualization
-* Added an in-program help guide for users
-
-📂 *Commit:* `Day4: Added find, tree, and help commands for search and navigation`
+**Highlights:**  
+- Recursive directory traversal  
+- Implemented visual `tree` command output  
+- Added in-terminal help menu  
 
 ---
 
 ### 🟥 **Day 5 – History, Clear & Exit Confirmation**
+**Implemented Commands:**  
+- `history` → Show executed commands  
+- `clear` → Clear terminal screen  
+- `exit` → With user confirmation  
 
-**Objective:** Polish UI and improve user experience.
-**Commands Added:**
+**Highlights:**  
+- Implemented command history vector  
+- Enhanced UI/UX with clear screen feature  
+- Final testing and code optimization  
 
-* `history` → Show all executed commands
-* `clear` → Clear the terminal screen
-* `exit` → Added confirmation (`Are you sure? y/n`)
+---
 
-**Highlights:**
+## 📸 Project Screenshots
 
-* Implemented vector-based command history
-* Integrated `system("clear")` for screen refresh
-* Completed final build and cleanup with `.gitignore`
-
-📂 *Commit:* `Day5: Added history, clear, and exit confirmation - Final Build`
+| Day | Description | Screenshot |
+|:---:|:-------------|:------------|
+| **Day 1** | Basic setup – `pwd`, `ls`, `exit` | ![Day 1](screenshots/day1.png) |
+| **Day 2** | Navigation – `cd`, `mkdir`, `touch` | ![Day 2](screenshots/day2.png) |
+| **Day 3** | File management – `cp`, `mv`, `rm`, `info` | ![Day 3](screenshots/day3.png) |
+| **Day 4** | Search & tree view – `find`, `tree`, `help` | ![Day 4](screenshots/day4.png) |
+| **Day 5** | Final version – `history`, `clear`, `exit` | ![Day 5](screenshots/day5.png) |
 
 ---
 
@@ -129,129 +110,84 @@ The project was implemented, tested, and run inside **WSL2 Ubuntu** using **VS C
 
 ```
 file-explorer-capstone/
-├── Day1/                     # Day 1 version code
-├── Day2/                     # Day 2 version code
-├── Day3/                     # Day 3 version code
-├── Day4/                     # Day 4 version code
-├── Day5/                     # Final version
-├── demo_session/             # Screenshots or demo recordings
+├── Day1/
+│   └── file_explorer.cpp
+├── Day2/
+│   └── file_explorer.cpp
+├── Day3/
+│   └── file_explorer.cpp
+├── Day4/
+│   └── file_explorer.cpp
+├── Day5/
+│   └── file_explorer.cpp
 ├── src/
-│   └── file_explorer.cpp     # Active development file
-├── Makefile                  # Build automation script
-├── .gitignore                # Ignored files configuration
-└── README.md                 # Project documentation
+│   └── file_explorer.cpp     # Final version (Day 5)
+├── screenshots/
+│   ├── day1.png
+│   ├── day2.png
+│   ├── day3.png
+│   ├── day4.png
+│   └── day5.png
+├── Makefile
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## 💻 How to Build & Run
+## 💻 Build & Run Instructions
 
-### 🧰 Prerequisites
-
-* Ubuntu (via WSL2)
-* g++ compiler (C++17)
-* make utility
-* Git installed
-
-### 🛠️ Build
-
+### 🔧 Build
 ```bash
 make
 ```
 
 ### ▶️ Run
-
 ```bash
 ./file_explorer
 ```
 
 ### 🧹 Clean
-
 ```bash
 make clean
 ```
 
 ---
 
-## 🧪 Example Demo Commands
+## 🧪 Example Session
 
 ```bash
 pwd
 ls
-mkdir demo
-cd demo
-touch hello.txt
-cp hello.txt copy.txt
-info copy.txt
+mkdir test
+cd test
+touch file.txt
+info file.txt
+cp file.txt backup.txt
+mv backup.txt ../
+find file.txt
 tree
-find hello
 history
 exit
 ```
 
 ---
 
-## 📸 Demo Session
-
-All screenshots and run logs are stored in the `demo_session/` folder.
-Example files:
-
-```
-demo_session/
- ├── day1_output.png
- ├── day2_demo.png
- ├── day3_operations.png
- ├── day4_search_tree.png
- └── day5_final.png
-```
-
----
-
-## ⚙️ .gitignore Highlights
-
-```gitignore
-file_explorer
-*.o
-*.out
-*.log
-/build/
-/temp/
-/cache/
-```
-
-This ensures compiled files don’t clutter your repository.
-
----
-
-## 🌟 Final Output Preview
-
-```
-Simple File Explorer - Final Build
-Type 'help' for list of commands.
-
-/home/biseswar/projects/file-explorer-capstone $
-Commands: pwd, ls, cd, mkdir, touch, cp, mv, rm, info, find, tree, history, clear, help, exit
-```
-
----
-
 ## 👨‍💻 Author
 
-**Biseswar Mohapatra**
-🎓 Linux System Programming | C++ Developer | Automation Enthusiast
-📧 [biseswarmohapatra214@gmail.com](mailto:biseswarmohapatra214@gmail.com)
+**Biseswar Mohapatra**  
+🎓 Linux System Programming | C++ Developer | Automation Enthusiast  
+📧 [biseswarmohapatra214@gmail.com](mailto:biseswarmohapatra214@gmail.com)  
 🌐 [GitHub Profile](https://github.com/biseswar2004)
 
 ---
 
 ## 🏁 Conclusion
 
-This project successfully demonstrates:
+This project demonstrates a practical understanding of:
+- Linux filesystem operations  
+- Command-line interface development  
+- Modern C++17 features and STL  
+- Structured software design and documentation  
 
-* Mastery of Linux filesystem operations in C++
-* Use of modern C++17 features and robust error handling
-* Real-world application of system programming concepts
-* Professional GitHub documentation and structure
-
-🎉 **Project Completed: 100% Functional (Day 1 → Day 5)**
-
+💡 *Capstone Project successfully implemented from Day 1 to Day 5 — fully functional and ready for demonstration!*
