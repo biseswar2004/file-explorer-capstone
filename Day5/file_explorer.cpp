@@ -1,4 +1,3 @@
-//-------------------DAY 5----------------------//
 #include <bits/stdc++.h>
 #include <filesystem>
 #include <chrono>
@@ -6,10 +5,10 @@
 using namespace std;
 namespace fs = std::filesystem;
 
-// ---------- Command History ----------
+// ---------- Command History ----------//
 vector<string> command_history;
 
-// ---------- Existing Commands ----------
+// ---------- Existing Commands ----------//
 void cmd_pwd() {
     cout << fs::current_path().string() << "\n";
 }
@@ -57,6 +56,7 @@ void cmd_cp(const string &src, const string &dest) {
     } catch (...) {
         cout << "cp: failed to copy file\n";
     }
+    
 }
 
 void cmd_mv(const string &src, const string &dest) {
