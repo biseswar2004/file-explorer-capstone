@@ -1,6 +1,6 @@
 # 🗂️ File Explorer – Linux Capstone Project (C++)
 
-### 💡 Overview
+###  Overview
 The **File Explorer Capstone Project** is a Linux-based, terminal-driven file management system developed using **C++17**.  
 It replicates the functionality of a Linux shell — allowing users to **navigate**, **create**, **move**, **copy**, and **analyze files and directories** through command-line commands.
 
@@ -8,12 +8,12 @@ Built and tested on **Ubuntu (via WSL2)** using **VS Code**, this project demons
 
 ---
 
-## 🧠 Objective
+##  Objective
 To design and implement a **simple command-line File Explorer** that performs fundamental file and directory operations in Linux — while reinforcing system-level programming concepts in C++.
 
 ---
 
-## ⚙️ Technologies Used
+##  Technologies Used
 
 | Tool / Technology | Purpose |
 |-------------------|----------|
@@ -26,9 +26,9 @@ To design and implement a **simple command-line File Explorer** that performs fu
 
 ---
 
-## 🗓️ Day-wise Progress
+##  Day-wise Progress
 
-### 🟩 **Day 1 – Basic Setup & Commands**
+###  **Day 1 – Basic Setup & Commands**
 **Implemented Commands:**  
 - `pwd` → Print working directory  
 - `ls` → List files/folders  
@@ -41,7 +41,7 @@ To design and implement a **simple command-line File Explorer** that performs fu
 
 ---
 
-### 🟨 **Day 2 – Directory Navigation & File Creation**
+###  **Day 2 – Directory Navigation & File Creation**
 **Implemented Commands:**  
 - `cd <dir>` → Change directory  
 - `mkdir <dir>` → Create directory  
@@ -54,7 +54,7 @@ To design and implement a **simple command-line File Explorer** that performs fu
 
 ---
 
-### 🟦 **Day 3 – File Manipulation & Information Retrieval**
+###  **Day 3 – File Manipulation & Information Retrieval**
 **Implemented Commands:**  
 - `cp <src> <dest>` → Copy file  
 - `mv <src> <dest>` → Move or rename file  
@@ -68,7 +68,7 @@ To design and implement a **simple command-line File Explorer** that performs fu
 
 ---
 
-### 🟪 **Day 4 – Search, Tree & Help**
+###  **Day 4 – Search, Tree & Help**
 **Implemented Commands:**  
 - `find <name>` → Search recursively for file/folder  
 - `tree` → Display directory structure  
@@ -81,7 +81,7 @@ To design and implement a **simple command-line File Explorer** that performs fu
 
 ---
 
-### 🟥 **Day 5 – History, Clear & Exit Confirmation**
+###  **Day 5 – History, Clear & Exit Confirmation**
 **Implemented Commands:**  
 - `history` → Show executed commands  
 - `clear` → Clear terminal screen  
@@ -94,7 +94,7 @@ To design and implement a **simple command-line File Explorer** that performs fu
 
 ---
 
-## 📸 Project Screenshots
+##  Project Screenshots
 
 | Day | Description | Screenshot |
 |:---:|:-------------|:------------|
@@ -106,7 +106,7 @@ To design and implement a **simple command-line File Explorer** that performs fu
 
 ---
 
-## 🧩 Project Structure
+##  Project Structure
 
 ```
 file-explorer-capstone/
@@ -135,26 +135,26 @@ file-explorer-capstone/
 
 ---
 
-## 💻 Build & Run Instructions
+##  Build & Run Instructions
 
-### 🔧 Build
+###  Build
 ```bash
 make
 ```
 
-### ▶️ Run
+###  Run
 ```bash
 ./file_explorer
 ```
 
-### 🧹 Clean
+###  Clean
 ```bash
 make clean
 ```
 
 ---
 
-## 🧪 Example Session
+##  Example Session
 
 ```bash
 pwd
@@ -173,7 +173,7 @@ exit
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Biseswar Mohapatra**  
 🎓 Linux System Programming | C++ Developer | Automation Enthusiast  
@@ -182,12 +182,13 @@ exit
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 This project demonstrates a practical understanding of:
 - Linux filesystem operations  
 - Command-line interface development  
 - Modern C++17 features and STL  
 - Structured software design and documentation  
+
 
 
